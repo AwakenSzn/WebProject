@@ -1,0 +1,114 @@
+/* Navigation Bar */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: century;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(R2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Background stays fixed */
+    height: 100vh; /* Ensures full viewport coverage */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Moves content up */
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 10px; /* Raises the navbar */
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 10px; /* Raises menu items */
+    margin-right: 40px;
+    font-size: 17px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;  
+}
+
+/* Meal Customizer */
+.container {
+    width: 60%;
+    margin-top: 80px; /* Moves the menu higher */
+    background: rgba(255, 255, 255, 0.425); /* Slight transparency */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(5px); /* Blurred background effect */
+}
+
+h1 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 8px;
+}
+
+select, input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.summary {
+    background: #f8f8f89c;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: #ff6600;
+    color: rgba(255, 255, 255, 0.671);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #ff8533;
+}
